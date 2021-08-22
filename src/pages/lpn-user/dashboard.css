@@ -1,0 +1,72 @@
+#userInfo {
+    width: 30vw;
+    margin: 0 auto;
+    position: relative;
+    top: 10vh;
+    background-color: rgba(10,10,10,0.3);
+    color: white;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    padding: 20px;
+    border-radius: 20px;
+    font-family: Poppins;
+}
+#userWrapper {
+    background: rgba(10,10,10,0.3);
+    height: 100vh;
+}
+#dashboardWrapper {
+    padding: 1em;
+    display: flex;
+    height: 91vh;
+    border-radius: 20px;
+    padding: 20px;
+}
+#dashboardContainer {
+    
+    
+}
+.DashboardWrapper {
+    width: 50%;
+}
+.DashboardWrapper .MuiCardHeader-content span {
+    font-size: 20px;
+    color: white;
+}
+.DashboardWrapperTwo .MuiCardHeader-content span {
+    font-size: 20px;
+    color: white;
+}
+.DashboardWrapper .MuiCardHeader-content span:nth-child(2)::after{
+    content: ' Token';
+    font-size: 20px;
+    color: white;
+}
+.DashboardMedia {
+    height: 0;
+    padding-top: '56.25%';
+}
+.DashboardAvatar {
+    background: red !important;
+}
+/* .MuiCardHeader-content span {
+    
+}
+.MuiCardHeader-content span:nth-child(2)::after {
+    
+} */
+.MuiCardHeader-root {
+    width: 100% !important
+}
+.MuiCard-root {
+    color: white !important;
+    width: 22vw;
+    background-color: yellowgreen !important;
+}
+#DashboardContainer {
+    display: flex;
+    justify-content: space-around;
+    width: 80vw;
+    margin-top: 5vh
+}

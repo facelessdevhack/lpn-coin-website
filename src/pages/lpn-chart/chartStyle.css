@@ -1,0 +1,92 @@
+#bgSectionTwo {
+    width: 100vw;
+    margin-top: -4px;
+    position: absolute;
+}
+#tokenHeading {
+    position: relative;
+    text-align: center;
+    color: #77d102;
+    font-family: 'Poppins';
+    margin: 0 auto;
+    font-weight: 300;
+
+}
+#tokenSaleDes {
+    position: relative;
+    display: grid;
+    grid-template-columns: 35vw 50vw;
+    margin: 0 auto;
+    width: 80vw;
+    padding: 2em
+}
+#tokenSaleDes h1 {
+    font-family: Poppins;
+    color: #77d102;
+    width: 50%
+}
+#tokenSaleDes p {
+    color: white;
+    font-family: Poppins;
+    width: 70%;
+    margin-left: 10%
+}
+#tokenSaleDes p:before {
+    content: '';
+    height: 88%;
+    width: 1px;
+    background-color: #013162;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+#chartdescs {
+    z-index: 2;
+    color: white;
+    list-style-type: none;
+}
+#chartWrapper {
+    display: grid;
+    grid-template-columns: 30vw 50vw;
+    width: 80vw;
+    margin: 0 auto;
+    flex: auto;
+    align-items: center;
+}
+/* #mc_form_wrapper {
+    width: 80vw;
+    margin: 0 auto;
+    justify-content: center;
+    height: 50vh;
+    align-items: center;
+}
+.mc__field-container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+    border: 2px solid black;
+}
+.mc__field-container input {
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+}
+.mc__field-container input::placeholder {
+    color: white !important
+}
+#inputFirst::before {
+    left: 0;
+    right: 0;
+    /* bottom: 0; */
+    /* padding: 19px;
+    content: "\00a0";
+    position: absolute;
+    transition: border-bottom-color 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    border: 2px solid rgba(0, 0, 0, 0.42);
+    pointer-events: none;
+    border-radius: 18px; */
+/* } */ 
