@@ -18,9 +18,9 @@ class Navbar extends React.Component {
                         <li>
                             <Link className="NavLinkers">Home</Link>
                         </li>
-                        <li>
+                        {/* <li>
                             <Link className="NavLinkers">How It Works</Link>
-                        </li>
+                        </li> */}
                         <li>
                             <Link className="NavLinkers">Token Sale</Link>
                         </li>
@@ -28,7 +28,7 @@ class Navbar extends React.Component {
                             <Link className="NavLinkers">White Paper</Link>
                         </li>
                         <li>
-                            <Link className="NavLinkers">Roadmap</Link>
+                            <Link href='#InitialOffering' className="NavLinkers">Initial Offering</Link>
                         </li>
                         <li>
                         <Button variant="outlined" id='loginBtn' href='/login'>

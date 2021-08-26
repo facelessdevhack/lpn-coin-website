@@ -2,6 +2,7 @@
 
 #background {
   z-index: 0;
+  width: 100vw;
 }
 #navWrapper {
     background: rgba(0,0,0,0.3);
@@ -22,8 +23,8 @@
 
 .loader {
   position: relative;
-  width: 550px;
-  height: 550px;
+  width: 30vw;
+  height: 30vw;
 }
 
 .loader-classic {
@@ -108,8 +109,8 @@
 
 .loader-two {
   position: relative;
-  width: 325px;
-  height: 325px;
+  width: 18vw;
+  height: 18vw;
 }
 
 .loader-classic-two {
@@ -180,31 +181,33 @@
 }
 #jumboTronWrapper {
   position: absolute;
-  display: flex;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: 65% 35%;
   z-index: 2;
   top: 20%;
   width: 100vw;
   align-items: center;
 }
 #rightJumbo {
-  width: 45vw;
+  width: 100%;
   display: flex;
 }
 #leftJumbo {
-  width: 45vw;
-  margin-top: 6%;
+  width: 70%;
+  margin: 0 auto;
+  padding:7%
+  /* margin-top: 6%; */
 }
 #leftJumbo h1{
   color: white;
   font-family: Poppins;
-  font-size: 3em;
+  font-size: 4vw;
   font-weight: 300;
 }
 #leftJumbo h4{
   color: white;
   font-family: Poppins;
-  font-size: 1.2em;
+  font-size: 2.5vw;
 }
 #timerAnimation {
   position: absolute;
@@ -333,7 +336,7 @@
   margin: 0 auto;
 }
 .roadmapFirstText {
-  width: 155px;
+  width: 30%;
   position: relative;
   padding-right: 25px;
   color: #77d102;
@@ -472,4 +475,95 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* ---------------------------------
+            Media Queries 
+----------------------------------*/
+
+@media screen and (max-width: 480px) {
+  #rightJumbo {
+    display: none;
+  }
+  #jumboTronWrapper {
+    display: flex;
+    top: 15%;
+  }
+  #background {
+    height: 50vh;
+    margin-top: -4px
+  }
+  #col6Inner {
+    margin: unset;
+    height: fit-content;
+  }
+  .sectionHeading{
+    font-size: 4vw;
+  }
+  #col6 {
+    width: 50%;
+  }
+  .sectionText{
+    font-size: 2.5vw;
+    line-height: 20px;
+  }
+  .ercAboutImg{
+    display: none;
+  }
+  .ercEth {
+    left: -15vw
+  }
+  #ercContainer {
+    width: 78vw;
+    grid-template-columns: 36% 128%;
+    display: grid;
+  }
+  #tokenSaleDes p {
+    font-size: 2.5vw;
+  }
+  #tokenSaleDes h1 {
+    font-size: 4vw;
+  }
+  #tokenHeading {
+    font-size: 4vw;
+  }
+  #chartdiv {
+    width: 100% !important;
+    height: 50% !important;
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+  tspan {
+    font-size: 2vw;
+    z-index: 2;
+  }
+  #bgSectionTwo {
+    height: 100%
+  }
+  #roadmapRight {
+    display: none;
+  }
+  #roadmapPoints {
+    padding: 2vw 2vw;
+  }
+  .roadmapFirstText {
+    font-size: 3vw;
+    padding-right: unset;
+  }
+  .roadmapSecondText {
+    font-size: 3vw;
+  }
+  #roadmapWrap {
+    display: flex;
+  }
+  .tm-gr-ball {
+    display: none;
+  }
+  #mc_form_wrapper {
+    width: unset !important;
+    margin-top: -4px !important;
+  }
+  .nav-menu {
+    display: none;
+  }
 }

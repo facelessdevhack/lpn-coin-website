@@ -111,3 +111,27 @@
     opacity: 1;
   }
 }
+#mc_form_wrapper {
+  width: 35vw;
+  margin: 0 auto;
+  padding: 40px;
+  background: #023411;
+  position: relative;
+}
+
+#inputFirst {
+  border: 1px solid whitesmoke;
+  padding: 10px;
+  border-top-right-radius: 20px;
+  color: white;
+}
+#subFormBtn {
+  background: #77d102;
+  border-top-right-radius: 20px;
+  padding: 10px;
+}
+.mc__title {
+  color: whitesmoke;
+  font-family: Poppins;
+  font-size: 30px
+}

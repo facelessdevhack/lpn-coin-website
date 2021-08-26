@@ -1,5 +1,5 @@
 #login-wrapper {
-    background-color: rgba(10,10,10,0.3);
+    background-color: aliceblue;
     width: 100vw;
     height: 100vh;
     position: absolute;
@@ -9,8 +9,13 @@
     width: 30vw;
     margin: 0 auto;
     position: relative;
-    top: 20vh;
+    top: 10vh;
     text-align: center;
+    background: lightblue;
+    padding: 60px 20px 60px 20px;
+    box-shadow: 8px 9px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 8px 9px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 8px 9px 5px 0px rgba(0,0,0,0.75);
 }
 #logo-wrapper img{
     width: 20%
@@ -23,12 +28,13 @@
     font-size: 1em;
     font-weight: 300;
     text-align: left;
-    margin-left: 20px
+    margin-left: 20px;
 }
 #login-input input {
     width: 80%;
     padding: 1em;
     border-radius: 13px;
+    border: 1px solid aliceblue;
 }
 #login-btn-wrapper button {
     width: 40%;

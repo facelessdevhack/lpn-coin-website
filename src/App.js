@@ -4,13 +4,16 @@ import { Provider } from 'react-redux';
 import store  from './pages/lpn-store/store'
 import RoutingLPN from './pages/lpn-routes/routes';
 
+
 class App extends React.Component {
   render() {
       return (
           <Provider store={store}>
                   <div>
                       <header>
-                          <RoutingLPN />
+                          <React.Fragment>
+                            <RoutingLPN />
+                          </React.Fragment>
                       </header>
                   </div>
           </Provider>

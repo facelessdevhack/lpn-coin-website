@@ -42,6 +42,7 @@ const CustomForm = ({ status, message, onValidated }) => {
             value={lastName}
             placeholder="Last Name"
             isRequired
+            id='inputFirst'
           />
 
           <Input
@@ -51,6 +52,7 @@ const CustomForm = ({ status, message, onValidated }) => {
             value={email}
             placeholder="Enter Your Email Address"
             isRequired
+            id='inputFirst'
           />
 
         </div>
@@ -59,6 +61,7 @@ const CustomForm = ({ status, message, onValidated }) => {
           label="subscribe"
           type="submit"
           formValues={[email, firstName, lastName]}
+          id='subFormBtn'
         />
       </form>
     );
