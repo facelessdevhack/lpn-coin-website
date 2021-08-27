@@ -17,6 +17,7 @@ import {
   } from "react-device-detect";
 import aboutBg from '../../assets/about-bg.jpg';
 import bgTwo from '../../assets/bgtwo.jpg'
+import Footer from '../lpn-footer/footer';
 
 const styles = {
     paperContainer: {
@@ -225,6 +226,13 @@ class Home extends React.Component {
                         <Row>
                             <Col>
                                 <SubForm />
+                            </Col>
+                        </Row>
+                    </Container>
+                    <Container style={{backgroundImage: `url(${bgTwo})`, textAlign: 'center', maxWidth: '100vw'}}>
+                        <Row>
+                            <Col>
+                                <Footer />
                             </Col>
                         </Row>
                     </Container>
