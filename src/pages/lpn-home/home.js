@@ -134,7 +134,7 @@ class Home extends React.Component {
                             </div>
                         </Row>
                     </Container>
-                    <Container style={{height: 'fit-content', maxWidth:'100vw', border: '1px solid blue',  backgroundImage: `url(${aboutBg})`, padding: '25px', backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}}>
+                    <Container style={{height: 'fit-content', maxWidth:'100vw', border: '1px solid blue',  backgroundImage: `url(${aboutBg})`, padding: '25px', paddingBottom: '100px', backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}}>
                         <Row>
                             <Col>
                                 <ChartSection />
