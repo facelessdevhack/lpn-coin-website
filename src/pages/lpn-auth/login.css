@@ -61,4 +61,7 @@
         font-weight: 900;
         font-family: Poppins;
     }
+    #login-btn-wrapper button {
+        padding: 20px
+    }
 }

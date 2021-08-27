@@ -105,7 +105,7 @@ class Home extends React.Component {
                             </Navbar.Collapse>
                         </Container>
                     </Navbar>
-                    <Container style={{height: "fit-content", maxWidth: '100vw', border: '1px solid red', backgroundImage: `url(${back})`, paddingTop: '255px', paddingBottom: '130px', paddingLeft: '60px', display: 'flex', flexDirection:'column', justifyContent: 'space-around'}}>
+                    <Container style={{height: "fit-content", maxWidth: '100vw', backgroundImage: `url(${back})`, paddingTop: '255px', paddingBottom: '130px', paddingLeft: '60px', display: 'flex', flexDirection:'column', justifyContent: 'space-around'}}>
                         <Row>
                             <Col>
                                 <Typography style={{color: 'white', marginBottom: '20px'}} variant='h2'>Amazo ICO is Launching on <br/>02-09-2021</Typography >
@@ -118,7 +118,7 @@ class Home extends React.Component {
                             </Col>
                         </Row>
                     </Container>
-                    <Container style={{height: 'fit-content', maxWidth: '100vw', border: '1px solid blue',  backgroundImage: `url(${aboutBg})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', padding: '150px'}}>
+                    <Container style={{height: 'fit-content', maxWidth: '100vw', backgroundImage: `url(${aboutBg})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', padding: '150px'}}>
                         <Row>
                             <div id=''>
                                 <Col>
@@ -134,14 +134,14 @@ class Home extends React.Component {
                             </div>
                         </Row>
                     </Container>
-                    <Container style={{height: 'fit-content', maxWidth:'100vw', border: '1px solid blue',  backgroundImage: `url(${aboutBg})`, padding: '25px', paddingBottom: '100px', backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}}>
+                    <Container style={{height: 'fit-content', maxWidth:'100vw', backgroundImage: `url(${aboutBg})`, padding: '25px', paddingBottom: '100px', backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}}>
                         <Row>
                             <Col>
                                 <ChartSection />
                             </Col>
                         </Row>
                     </Container>
-                    <Container style={{height: 'fit-content', maxWidth: '100vw', border: '1px solid blue',  backgroundImage: `url(${bgTwo})`, padding:'150px', backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}}>
+                    <Container style={{height: 'fit-content', maxWidth: '100vw', backgroundImage: `url(${bgTwo})`, padding:'150px', backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}}>
                         <Row>
                             <Col>
                                 {/* <Roadmap /> */}
@@ -171,7 +171,7 @@ class Home extends React.Component {
                             </Navbar.Collapse>
                         </Container>
                     </Navbar>
-                    <Container style={{height: "fit-content", maxWidth: '100vw', border: '1px solid red', backgroundImage: `url(${back})`, paddingTop: '135px', display: 'flex', flexDirection:'column', justifyContent: 'space-around'}}>
+                    <Container style={{height: "fit-content", maxWidth: '100vw', backgroundImage: `url(${back})`, paddingTop: '135px', display: 'flex', flexDirection:'column', justifyContent: 'space-around'}}>
                         <Row>
                             <Col>
                                 <Typography style={{color: 'white', marginBottom: '20px'}} variant='h2'>Amazo ICO is Launching on <br/>02-09-2021</Typography >
@@ -184,7 +184,7 @@ class Home extends React.Component {
                             </Col>
                         </Row>
                     </Container>
-                    <Container style={{height: 'fit-content', maxWidth: '100vw', border: '1px solid blue',  backgroundImage: `url(${aboutBg})`, paddingTop: '80px', paddingBottom: '80px'}}>
+                    <Container style={{height: 'fit-content', maxWidth: '100vw', backgroundImage: `url(${aboutBg})`, paddingTop: '80px', paddingBottom: '80px'}}>
                         <Row>
                             <div id=''>
                                 <Col>
@@ -200,14 +200,14 @@ class Home extends React.Component {
                             </div>
                         </Row>
                     </Container>
-                    <Container style={{height: 'fit-content', maxWidth:'100vw', border: '1px solid blue',  backgroundImage: `url(${aboutBg})`, paddingTop: '80px', paddingBottom: '80px'}}>
+                    <Container style={{height: 'fit-content', maxWidth:'100vw', backgroundImage: `url(${aboutBg})`, paddingTop: '80px', paddingBottom: '80px'}}>
                         <Row>
                             <Col>
                                 <ChartSection />
                             </Col>
                         </Row>
                     </Container>
-                    <Container style={{height: 'fit-content', maxWidth: '100vw', border: '1px solid blue',  backgroundImage: `url(${bgTwo})`, paddingTop: '80px', paddingBottom: '80px'}}>
+                    <Container style={{height: 'fit-content', maxWidth: '100vw', backgroundImage: `url(${bgTwo})`, paddingTop: '80px', paddingBottom: '80px'}}>
                         <Row>
                             <Col>
                                 <Roadmap />
