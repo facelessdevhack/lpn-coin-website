@@ -149,10 +149,17 @@ class Home extends React.Component {
                             </Col>
                         </Row>
                     </Container>
-                    <Container style={{height: 'fit-content', maxWidth: '100vw', backgroundImage: `url(${bgTwo})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', paddingTop: '50px'}}>
+                    <Container style={{height: 'fit-content', maxWidth: '100vw', backgroundImage: `url(${bgTwo})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', paddingTop: '50px', paddingBottom: '50px'}}>
                         <Row>
                             <Col>
                                 <SubForm />
+                            </Col>
+                        </Row>
+                    </Container>
+                    <Container style={{backgroundImage: `url(${bgTwo})`, textAlign: 'center', maxWidth: '100vw', padding: '2vw', borderTop: '1px solid white'}}>
+                        <Row>
+                            <Col>
+                                <Footer />
                             </Col>
                         </Row>
                     </Container>
@@ -229,7 +236,7 @@ class Home extends React.Component {
                             </Col>
                         </Row>
                     </Container>
-                    <Container style={{backgroundImage: `url(${bgTwo})`, textAlign: 'center', maxWidth: '100vw', padding: '20px', borderTop: '1px solid white'}}>
+                    <Container style={{backgroundImage: `url(${bgTwo})`, textAlign: 'center', maxWidth: '100vw', padding: '2vw', borderTop: '1px solid white'}}>
                         <Row>
                             <Col>
                                 <Footer />
