@@ -5,6 +5,9 @@ import * as am4charts from "@amcharts/amcharts4/charts";
 import am4themes_animated from "@amcharts/amcharts4/themes/animated";
 import am4themes_dark from "@amcharts/amcharts4/themes/dark";
 import './chartStyle.css';
+import { BrowserView, MobileView } from 'react-device-detect';
+import { Typography } from '@material-ui/core';
+
 
 export class ChartSection extends Component {
     componentDidMount() {
@@ -73,22 +76,27 @@ export class ChartSection extends Component {
     render() {
         return (
             <div>
-                <img src={bgTwo} id='bgSectionTwo' />
-                <div id='tokenSaleDes'>
-                    <h1>What is a Token Sale?</h1>
-                    <p>A token sale, sometimes referred to as an ICO, is form of crowd funding for digital currency-related projects. In token sales, purch - asers buy units of a new currency in exchange for legal tender or other digital currencies, such as Bitcoin or Ethereum.</p>
-                </div>
-                <h1 id='tokenHeading'>Token Distribution</h1>
-                <div >
-                    {/* <ul id='chartdescs'>
-                        <li>Dubai's IBC Group</li>
-                        <li>Digital Assets Holdings</li>
-                        <li>Investo India</li>
-                        <li>Public Distribution</li>
-                        <li>Reserve</li>
-                    </ul> */}
-                    <div id="chartdiv" style={{ width: "100%", height: "500px" }}></div>
-                </div>
+                <BrowserView>
+                  <img src={bgTwo} id='bgSectionTwo' />
+                  <div id='tokenSaleDes'>
+                      <h1>What is a Token Sale?</h1>
+                      <p>A token sale, sometimes referred to as an ICO, is form of crowd funding for digital currency-related projects. In token sales, purch - asers buy units of a new currency in exchange for legal tender or other digital currencies, such as Bitcoin or Ethereum.</p>
+                  </div>
+                  <h1 id='tokenHeading'>Token Distribution</h1>
+                  <div >
+                      <div id="chartdiv" style={{ width: "100%", height: "500px" }}></div>
+                  </div>
+                </BrowserView>
+                <MobileView>
+                  <div>
+                    <Typography style={{color: '#77d102', marginBottom: '20px', textAlign: 'center', fontFamily: 'Poppins'}} variant='h2'>What is a Token Sale?</Typography >
+                    <Typography variant='p' style={{color: 'white', textAlign: 'center'}}>A token sale, sometimes referred to as an ICO, is form of crowd funding for digital currency-related projects. In token sales, purch - asers buy units of a new currency in exchange for legal tender or other digital currencies, such as Bitcoin or Ethereum.</Typography>
+                  </div>
+                  <Typography style={{color: '#77d102', marginBottom: '20px', textAlign: 'center', fontFamily: 'Poppins', marginTop: '40px'}} variant='h2'>Token Distribution</Typography >
+                  <div >
+                      <div id="chartdiv" style={{ width: "100%", height: "500px" }}></div>
+                  </div>
+                </MobileView>
             </div>
         )
     }

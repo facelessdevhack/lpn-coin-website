@@ -3,12 +3,17 @@ import React from 'react';
 import { Provider } from 'react-redux';
 import store  from './pages/lpn-store/store'
 import RoutingLPN from './pages/lpn-routes/routes';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { createTheme, responsiveFontSizes, ThemeProvider } from '@material-ui/core';
 
+let theme = createTheme();
+theme = responsiveFontSizes(theme);
 
 class App extends React.Component {
   render() {
       return (
           <Provider store={store}>
+            <ThemeProvider theme={theme}>
                   <div>
                       <header>
                           <React.Fragment>
@@ -16,6 +21,7 @@ class App extends React.Component {
                           </React.Fragment>
                       </header>
                   </div>
+            </ThemeProvider>
           </Provider>
       );
   }

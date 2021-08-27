@@ -2,11 +2,12 @@ import React, { Component } from 'react'
 import aboutImg from '../../assets/about-img2.png';
 import greenEth from '../../assets/green-ethereum1.png';
 import aboutBg from '../../assets/about-bg.jpg';
+import { Navbar, Container, Nav, Row, Col } from 'react-bootstrap';
 
 export class ERCToken extends Component {
     render() {
         return (
-            <div id='ercWrapper'>
+            <Container id='ercWrapper'>
                 <img src={aboutBg} id='background'/>
                 <div id='ercContainer'>
                     <div id='col6'>
@@ -36,7 +37,7 @@ export class ERCToken extends Component {
                         </div>
                     </div>
                 </div>
-            </div>
+            </Container>
         )
     }
 }
