@@ -88,7 +88,7 @@ export class ChartSection extends Component {
                   </div>
                 </BrowserView>
                 <TabletView>
-                  <div>
+                  <div style={{padding: '105px'}}>
                     <Typography style={{color: '#77d102', marginBottom: '80px', textAlign: 'center', fontFamily: 'Poppins'}} variant='h2'>What is a Token Sale?</Typography >
                     <Typography variant='h5' style={{color: 'white', textAlign: 'center'}}>A token sale, sometimes referred to as an ICO, is form of crowd funding for digital currency-related projects. In token sales, purch - asers buy units of a new currency in exchange for legal tender or other digital currencies, such as Bitcoin or Ethereum.</Typography>
                   </div>
