@@ -229,7 +229,7 @@ class Home extends React.Component {
                             </Col>
                         </Row>
                     </Container>
-                    <Container style={{backgroundImage: `url(${bgTwo})`, textAlign: 'center', maxWidth: '100vw'}}>
+                    <Container style={{backgroundImage: `url(${bgTwo})`, textAlign: 'center', maxWidth: '100vw', padding: '20px', borderTop: '1px solid white'}}>
                         <Row>
                             <Col>
                                 <Footer />
