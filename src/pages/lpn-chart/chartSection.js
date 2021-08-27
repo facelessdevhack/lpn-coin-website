@@ -25,7 +25,7 @@ export class ChartSection extends Component {
         }
         // Let's cut a hole in our Pie chart the size of 40% the radius
         chart.innerRadius = am4core.percent(40);
-        chart.depth = 20;
+        chart.depth = 10;
 
         // chart.legend = new am4charts.Legend();
         chart.data = [{

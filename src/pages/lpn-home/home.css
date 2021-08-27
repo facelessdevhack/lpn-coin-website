@@ -500,7 +500,7 @@
             Media Queries 
 ----------------------------------*/
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1028px) {
   #rightJumbo {
     /* display: none; */
     justify-content: center;
