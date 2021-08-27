@@ -90,10 +90,10 @@ class Home extends React.Component {
                                 <img src={logo} />mazo
                             </Navbar.Brand>
                             <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                            <Navbar.Collapse id="basic-navbar-nav">
-                            <Nav className="me-auto">
-                                <Nav.Link href="/">Home</Nav.Link>
-                                <Nav.Link href="/login">Login</Nav.Link>
+                            <Navbar.Collapse id="basic-navbar-nav" style={{color: 'white'}}>
+                            <Nav className="me-auto" style={{color: 'white'}}>
+                                <Nav.Link href="/" style={{color: 'white'}}>Home</Nav.Link>
+                                <Nav.Link href="/login" style={{color: 'white'}}>Login</Nav.Link>
                                 {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
                                 <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                                 <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
@@ -141,10 +141,17 @@ class Home extends React.Component {
                             </Col>
                         </Row>
                     </Container>
-                    <Container style={{height: 'fit-content', maxWidth: '100vw', backgroundImage: `url(${bgTwo})`, padding:'150px', backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}}>
+                    <Container style={{height: 'fit-content', maxWidth: '100vw', backgroundImage: `url(${bgTwo})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', paddingBottom: '50px'}}>
                         <Row>
                             <Col>
-                                {/* <Roadmap /> */}
+                                <Roadmap />
+                            </Col>
+                        </Row>
+                    </Container>
+                    <Container style={{height: 'fit-content', maxWidth: '100vw', backgroundImage: `url(${bgTwo})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', paddingTop: '50px'}}>
+                        <Row>
+                            <Col>
+                                <SubForm />
                             </Col>
                         </Row>
                     </Container>
@@ -156,10 +163,10 @@ class Home extends React.Component {
                                 <img src={logo} />mazo
                             </Navbar.Brand>
                             <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                            <Navbar.Collapse id="basic-navbar-nav">
+                            <Navbar.Collapse id="basic-navbar-nav" style={{color: 'white'}}>
                             <Nav className="me-auto">
-                                <Nav.Link href="/">Home</Nav.Link>
-                                <Nav.Link href="/login">Login</Nav.Link>
+                                <Nav.Link href="/" style={{color: 'white'}}>Home</Nav.Link>
+                                <Nav.Link href="/login" style={{color: 'white'}}>Login</Nav.Link>
                                 {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
                                 <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                                 <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>

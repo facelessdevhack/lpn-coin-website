@@ -2,6 +2,7 @@ import React, { Component, useState } from 'react';
 import MailchimpSubscribe from 'react-mailchimp-subscribe'
 import { Input } from '@material-ui/core';
 import './subForm.scss'
+import { BrowserView, MobileOnlyView, TabletView } from 'react-device-detect';
 
 const CustomForm = ({ status, message, onValidated }) => {
 
@@ -22,48 +23,140 @@ const CustomForm = ({ status, message, onValidated }) => {
         });
     }
     return (
-      <form className="mc__form" onSubmit={(e) => handleSubmit(e)}>
-        <h3 className="mc__title">Join our email list for future updates.</h3>
-        <div className="mc__field-container">
-          <Input
-            label="First Name"
-            onChangeHandler={setFirstName}
-            type="text"
-            value={firstName}
-            placeholder="First Name"
-            isRequired
-            id='inputFirst'
-          />
+      <>
+        <BrowserView>
+          <form className="mc__form" onSubmit={(e) => handleSubmit(e)}>
+            <h3 className="mc__title">Join our email list for future updates.</h3>
+            <div className="mc__field-container">
+              <Input
+                label="First Name"
+                onChangeHandler={setFirstName}
+                type="text"
+                value={firstName}
+                placeholder="First Name"
+                isRequired
+                id='inputFirst'
+              />
 
-          <Input
-            label="Last Name"
-            onChangeHandler={setLastName}
-            type="text"
-            value={lastName}
-            placeholder="Last Name"
-            isRequired
-            id='inputFirst'
-          />
+              <Input
+                label="Last Name"
+                onChangeHandler={setLastName}
+                type="text"
+                value={lastName}
+                placeholder="Last Name"
+                isRequired
+                id='inputFirst'
+              />
 
-          <Input
-            label="Email"
-            onChangeHandler={setEmail}
-            type="email"
-            value={email}
-            placeholder="Enter Your Email Address"
-            isRequired
-            id='inputFirst'
-          />
+              <Input
+                label="Email"
+                onChangeHandler={setEmail}
+                type="email"
+                value={email}
+                placeholder="Enter Your Email Address"
+                isRequired
+                id='inputFirst'
+              />
 
-        </div>
+            </div>
 
-        <Input
-          label="subscribe"
-          type="submit"
-          formValues={[email, firstName, lastName]}
-          id='subFormBtn'
-        />
-      </form>
+            <Input
+              label="subscribe"
+              type="submit"
+              formValues={[email, firstName, lastName]}
+              id='subFormBtn'
+            />
+          </form>
+        </BrowserView>
+        <TabletView>
+         <form className="mc__form" onSubmit={(e) => handleSubmit(e)}>
+            <h3 className="mc__title">Join our email list for future updates.</h3>
+            <div className="mc__field-container">
+              <Input
+                label="First Name"
+                onChangeHandler={setFirstName}
+                type="text"
+                value={firstName}
+                placeholder="First Name"
+                isRequired
+                id='inputFirst'
+              />
+
+              <Input
+                label="Last Name"
+                onChangeHandler={setLastName}
+                type="text"
+                value={lastName}
+                placeholder="Last Name"
+                isRequired
+                id='inputFirst'
+              />
+
+              <Input
+                label="Email"
+                onChangeHandler={setEmail}
+                type="email"
+                value={email}
+                placeholder="Enter Your Email Address"
+                isRequired
+                id='inputFirst'
+              />
+
+            </div>
+
+            <Input
+              label="subscribe"
+              type="submit"
+              formValues={[email, firstName, lastName]}
+              id='subFormBtn'
+            />
+          </form>
+        </TabletView>
+        <MobileOnlyView>
+          <form className="mc__form" onSubmit={(e) => handleSubmit(e)}>
+            <h3 className="mc__title">Join our email list for future updates.</h3>
+            <div className="mc__field-container">
+              <Input
+                label="First Name"
+                onChangeHandler={setFirstName}
+                type="text"
+                value={firstName}
+                placeholder="First Name"
+                isRequired
+                id='inputFirst'
+              />
+
+              <Input
+                label="Last Name"
+                onChangeHandler={setLastName}
+                type="text"
+                value={lastName}
+                placeholder="Last Name"
+                isRequired
+                id='inputFirst'
+              />
+
+              <Input
+                label="Email"
+                onChangeHandler={setEmail}
+                type="email"
+                value={email}
+                placeholder="Enter Your Email Address"
+                isRequired
+                id='inputFirst'
+              />
+
+            </div>
+
+            <Input
+              label="subscribe"
+              type="submit"
+              formValues={[email, firstName, lastName]}
+              id='subFormBtn'
+            />
+          </form>
+        </MobileOnlyView>
+      </>
     );
 };
 
