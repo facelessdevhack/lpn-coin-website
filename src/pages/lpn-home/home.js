@@ -221,6 +221,13 @@ class Home extends React.Component {
                             </Col>
                         </Row>
                     </Container>
+                    <Container style={{height: 'fit-content', maxWidth: '100vw', backgroundImage: `url(${bgTwo})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', paddingBottom: '50px'}}>
+                        <Row>
+                            <Col>
+                                <SubForm />
+                            </Col>
+                        </Row>
+                    </Container>
                 </MobileOnlyView>
             </div>
         )
