@@ -41,3 +41,24 @@
     margin-top: 20px;
     height: 20%;
 }
+@media screen and (max-width: 1028px) {
+    #login-input {
+        padding: 50px;
+        box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+        border-radius: 30px;
+        background-color: whitesmoke;
+    }
+    #login-welcometext {
+        background: greenyellow;
+        padding: 20px;
+        width: 80%;
+        margin: 0 auto;
+        border-radius: 10px;
+        position: relative;
+        top: 30px;
+        font-weight: 900;
+        font-family: Poppins;
+    }
+}

@@ -6,6 +6,13 @@ import { login } from '../lpn-actions/auth';
 import './login.css';
 import logo from '../../assets/logo.png';
 import { Button } from "@material-ui/core";
+import {
+    BrowserView,
+    TabletView,
+    MobileOnlyView
+} from 'react-device-detect';
+import {  Container, Row, Col } from 'react-bootstrap';
+import bg from '../../assets/loginBg.jpeg';
 
 class Login extends React.Component {
     state = {
@@ -32,6 +39,7 @@ class Login extends React.Component {
         const { email, password } = this.state;
         return (
             <>
+                <BrowserView>
                     <form onSubmit={this.onSubmit}>
                         <div id='login-wrapper'>
                             <div id='overlay'>
@@ -60,6 +68,69 @@ class Login extends React.Component {
                             </div>
                         </div>
                     </form>
+                </BrowserView>
+                <TabletView>
+                    <form onSubmit={this.onSubmit} style={{backgroundImage: `url(${bg})`,}}>
+                        <Container style={{width: '100vw', textAlign: 'center',  height: '100vh', paddingTop: '150px'}}>
+                            <Row>
+                                <Col>
+                                    <div id='logo-wrapper'>
+                                        <img src={logo} />
+                                    </div>
+                                    <div id='login-welcometext'>
+                                        <p>Member Login</p>
+                                    </div>
+                                    <div id='login-input'>
+                                        <p>Email address</p>
+                                        <input value={email} name='email' onChange={this.onChange} id='login-email' placeholder='input your email address' />
+                                        <p>Password</p>
+                                        <input type='password' id='login-email' onChange={this.onChange} value={password} name="password" placeholder='input your password' />
+                                    </div>
+                                    <div id='login-btn-wrapper'>
+                                        <Button variant="contained" color="primary" value="LOGIN" type="submit">
+                                            Login
+                                        </Button>
+                                        {/* <Link><p>Forgot Password?</p></Link> */}
+                                    </div>
+                                    {/* <div id='login-create-wrapper'>
+                                        <p>Don't have an account?</p>
+                                        <Link to='/register'><button>Create</button></Link>
+                                    </div> */}
+                                </Col>
+                            </Row>
+                        </Container>
+                    </form>
+                </TabletView>
+                <MobileOnlyView>
+                    <form onSubmit={this.onSubmit}>
+                        <div id='login-wrapper'>
+                            <div id='overlay'>
+                                <div id='logo-wrapper'>
+                                    <img src={logo} />
+                                </div>
+                                <div id='login-welcometext'>
+                                    <p>Member Login</p>
+                                </div>
+                                <div id='login-input'>
+                                    <p>Email address</p>
+                                    <input value={email} name='email' onChange={this.onChange} id='login-email' placeholder='input your email address' />
+                                    <p>Password</p>
+                                    <input type='password' id='login-email' onChange={this.onChange} value={password} name="password" placeholder='input your password' />
+                                </div>
+                                <div id='login-btn-wrapper'>
+                                    <Button variant="contained" color="primary" value="LOGIN" type="submit">
+                                        Login
+                                    </Button>
+                                    {/* <Link><p>Forgot Password?</p></Link> */}
+                                </div>
+                                {/* <div id='login-create-wrapper'>
+                                    <p>Don't have an account?</p>
+                                    <Link to='/register'><button>Create</button></Link>
+                                </div> */}
+                            </div>
+                        </div>
+                    </form>
+                </MobileOnlyView>
             </>
         );
     }
