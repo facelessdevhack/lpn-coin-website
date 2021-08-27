@@ -5,7 +5,7 @@ import * as am4charts from "@amcharts/amcharts4/charts";
 import am4themes_animated from "@amcharts/amcharts4/themes/animated";
 import am4themes_dark from "@amcharts/amcharts4/themes/dark";
 import './chartStyle.css';
-import { BrowserView, MobileView } from 'react-device-detect';
+import { BrowserView, MobileOnlyView, TabletView } from 'react-device-detect';
 import { Typography } from '@material-ui/core';
 
 
@@ -87,7 +87,17 @@ export class ChartSection extends Component {
                       <div id="chartdiv" style={{ width: "100%", height: "500px" }}></div>
                   </div>
                 </BrowserView>
-                <MobileView>
+                <TabletView>
+                  <div>
+                    <Typography style={{color: '#77d102', marginBottom: '80px', textAlign: 'center', fontFamily: 'Poppins'}} variant='h2'>What is a Token Sale?</Typography >
+                    <Typography variant='h5' style={{color: 'white', textAlign: 'center'}}>A token sale, sometimes referred to as an ICO, is form of crowd funding for digital currency-related projects. In token sales, purch - asers buy units of a new currency in exchange for legal tender or other digital currencies, such as Bitcoin or Ethereum.</Typography>
+                  </div>
+                  <Typography style={{color: '#77d102', marginBottom: '100px', textAlign: 'center', fontFamily: 'Poppins', marginTop: '100px'}} variant='h2'>Token Distribution</Typography >
+                  <div>
+                      <div id="chartdiv" style={{ width: "77vw", height: "28vw" }}></div>
+                  </div>
+                </TabletView>
+                <MobileOnlyView>
                   <div>
                     <Typography style={{color: '#77d102', marginBottom: '20px', textAlign: 'center', fontFamily: 'Poppins'}} variant='h2'>What is a Token Sale?</Typography >
                     <Typography variant='p' style={{color: 'white', textAlign: 'center'}}>A token sale, sometimes referred to as an ICO, is form of crowd funding for digital currency-related projects. In token sales, purch - asers buy units of a new currency in exchange for legal tender or other digital currencies, such as Bitcoin or Ethereum.</Typography>
@@ -96,7 +106,7 @@ export class ChartSection extends Component {
                   <div >
                       <div id="chartdiv" style={{ width: "100%", height: "500px" }}></div>
                   </div>
-                </MobileView>
+                </MobileOnlyView>
             </div>
         )
     }
