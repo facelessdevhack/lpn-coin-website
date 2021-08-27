@@ -85,16 +85,16 @@ class Home extends React.Component {
                 </div>
                 </BrowserView>
                 <TabletView>
-                <Navbar id='navbar' bg="light" expand="lg">
+                <Navbar id='navbar' bg="dark" variant="dark" expand="lg">
                         <Container>
                             <Navbar.Brand id='webName' href="#home">
                                 <img src={logo} />mazo
                             </Navbar.Brand>
-                            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                            <Navbar.Toggle aria-controls="basic-navbar-nav" style={{color: 'white'}} />
                             <Navbar.Collapse id="basic-navbar-nav" style={{color: 'white'}}>
-                            <Nav className="me-auto" style={{color: 'white'}}>
-                                <Nav.Link href="/" style={{color: 'white'}}>Home</Nav.Link>
-                                <Nav.Link href="/login" style={{color: 'white'}}>Login</Nav.Link>
+                            <Nav className="me-auto" style={{color: 'white', backgroundColor: 'rgba(0,0,0,0.3)', padding: '20px', borderBottomLeftRadius: '10px', borderBottomRightRadius: '10px', }}>
+                                <Nav.Link href="/" style={{color: 'white', fontFamily: 'Poppins', fontSize: '3vw'}}>Home</Nav.Link>
+                                <Nav.Link href="/login" style={{color: 'white', fontFamily: 'Poppins', fontSize: '3vw'}}>Login</Nav.Link>
                                 {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
                                 <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                                 <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
