@@ -173,8 +173,8 @@ class Home extends React.Component {
                             <Navbar.Toggle aria-controls="basic-navbar-nav" />
                             <Navbar.Collapse id="basic-navbar-nav" style={{color: 'white'}}>
                             <Nav className="me-auto" style={{color: 'white', backgroundColor: 'rgba(0,0,0,0.3)', padding: '20px', borderBottomLeftRadius: '10px', borderBottomRightRadius: '10px', }}>
-                                <Nav.Link href="/" style={{color: 'white', fontFamily: 'Poppins', fontSize: '3vw'}}>Home</Nav.Link>
-                                <Nav.Link href="/login" style={{color: 'white', fontFamily: 'Poppins', fontSize: '3vw'}}>Login</Nav.Link>
+                                <Nav.Link href="/" style={{color: 'black', fontFamily: 'Poppins', fontSize: '3vw', backgroundColor: 'rgba(255,255,255,0.8)',borderRadius: '10px',marginBottom: '5px', padding: '10px'}}>Home</Nav.Link>
+                                <Nav.Link href="/login" style={{color: 'black', fontFamily: 'Poppins', fontSize: '3vw', backgroundColor: 'rgba(255,255,255,0.8)',borderRadius: '10px',marginBottom: '5px', padding: '10px'}}>Login</Nav.Link>
                                 {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
                                 <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                                 <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
