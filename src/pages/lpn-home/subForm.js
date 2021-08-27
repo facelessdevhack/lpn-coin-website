@@ -26,7 +26,7 @@ const CustomForm = ({ status, message, onValidated }) => {
       <>
         <BrowserView>
           <form className="mc__form" onSubmit={(e) => handleSubmit(e)}>
-            <h3 className="mc__title">Join our email list for future updates.</h3>
+            <h3 className="mc__title">Join Us for future updates.</h3>
             <div className="mc__field-container">
               <Input
                 label="First Name"
@@ -70,7 +70,7 @@ const CustomForm = ({ status, message, onValidated }) => {
         </BrowserView>
         <TabletView>
          <form className="mc__form" onSubmit={(e) => handleSubmit(e)}>
-            <h3 className="mc__title">Join our email list for future updates.</h3>
+            <h3 className="mc__title">Join Us for future updates.</h3>
             <div className="mc__field-container">
               <Input
                 label="First Name"
@@ -114,7 +114,7 @@ const CustomForm = ({ status, message, onValidated }) => {
         </TabletView>
         <MobileOnlyView>
           <form className="mc__form" onSubmit={(e) => handleSubmit(e)}>
-            <h3 className="mc__title">Join our email list for future updates.</h3>
+            <h3 className="mc__title">Join Us for future updates.</h3>
             <div className="mc__field-container">
               <Input
                 label="First Name"
