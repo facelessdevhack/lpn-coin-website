@@ -36,216 +36,156 @@ export class Whitepaper extends Component {
     render() {
         return (
             <div style={{marginLeft: '-3px'}}>
-                <Container>
-                    <Row>
-                        <Col>
-                            <img src={amazoOne} alt='one' style={{width: '100vw'}}/>
-                        </Col>
-                    </Row>
-                </Container>
-                <Container>
-                    <Row>
-                        <Col>
-                            <img src={amazotwo} alt='one' style={{width: '100vw'}}/>
-                        </Col>
-                    </Row>
-                </Container>
-                <Container>
-                    <Row>
-                        <Col>
-                            <img src={amazothree} alt='one' style={{width: '100vw'}}/>
-                        </Col>
-                    </Row>
-                </Container>
-                <Container>
-                    <Row>
-                        <Col>
-                            <img src={amazofour} alt='one' style={{width: '100vw'}}/>
-                        </Col>
-                    </Row>
-                </Container>
-                <Container>
-                    <Row>
-                        <Col>
-                            <img src={amazofive} alt='one' style={{width: '100vw'}}/>
-                        </Col>
-                    </Row>
-                </Container>
-                <Container>
-                    <Row>
-                        <Col>
-                            <img src={amazosix} alt='one' style={{width: '100vw'}}/>
-                        </Col>
-                    </Row>
-                </Container>
-                <Container>
-                    <Row>
-                        <Col>
-                            <img src={amazoseven} alt='one' style={{width: '100vw'}}/>
-                        </Col>
-                    </Row>
-                </Container>
-                <Container>
-                    <Row>
-                        <Col>
-                            <img src={amazoeight} alt='one' style={{width: '100vw'}}/>
-                        </Col>
-                    </Row>
-                </Container>
-                <Container>
-                    <Row>
-                        <Col>
-                            <img src={amazonine} alt='one' style={{width: '100vw'}}/>
-                        </Col>
-                    </Row>
-                </Container>
-                <Container>
-                    <Row>
-                        <Col>
-                            <img src={amazoten} alt='one' style={{width: '100vw'}}/>
-                        </Col>
-                    </Row>
-                </Container>
-                <Container>
-                    <Row>
-                        <Col>
-                            <img src={amazoeleven} alt='one' style={{width: '100vw'}}/>
-                        </Col>
-                    </Row>
-                </Container>
-                <Container>
-                    <Row>
-                        <Col>
-                            <img src={amazotwelve} alt='one' style={{width: '100vw'}}/>
-                        </Col>
-                    </Row>
-                </Container>
-                <Container>
-                    <Row>
-                        <Col>
-                            <img src={amazothirteen} alt='one' style={{width: '100vw'}}/>
-                        </Col>
-                    </Row>
-                </Container>
-                <Container>
-                    <Row>
-                        <Col>
-                            <img src={amazofourteen} alt='one' style={{width: '100vw'}}/>
-                        </Col>
-                    </Row>
-                </Container>
-                <Container>
-                    <Row>
-                        <Col>
-                            <img src={amazofifteen} alt='one' style={{width: '100vw'}}/>
-                        </Col>
-                    </Row>
-                </Container>
-                <Container>
-                    <Row>
-                        <Col>
-                            <img src={amazosixteen} alt='one' style={{width: '100vw'}}/>
-                        </Col>
-                    </Row>
-                </Container>
-                <Container>
-                    <Row>
-                        <Col>
-                            <img src={amazoseventeen} alt='one' style={{width: '100vw'}}/>
-                        </Col>
-                    </Row>
-                </Container>
-                <Container>
-                    <Row>
-                        <Col>
-                            <img src={amazoeighteen} alt='one' style={{width: '100vw'}}/>
-                        </Col>
-                    </Row>
-                </Container>
-                <Container>
-                    <Row>
-                        <Col>
-                            <img src={amazonineteen} alt='one' style={{width: '100vw'}}/>
-                        </Col>
-                    </Row>
-                </Container>
-                <Container>
-                    <Row>
-                        <Col>
-                            <img src={amazotwenty} alt='one' style={{width: '100vw'}}/>
-                        </Col>
-                    </Row>
-                </Container>
-                <Container>
-                    <Row>
-                        <Col>
-                            <img src={amazotwentyOne} alt='one' style={{width: '100vw'}}/>
-                        </Col>
-                    </Row>
-                </Container>
-                <Container>
-                    <Row>
-                        <Col>
-                            <img src={amazotwentytwo} alt='one' style={{width: '100vw'}}/>
-                        </Col>
-                    </Row>
-                </Container>
-                <Container>
-                    <Row>
-                        <Col>
-                            <img src={amazotwentythree} alt='one' style={{width: '100vw'}}/>
-                        </Col>
-                    </Row>
-                </Container>
-                <Container>
-                    <Row>
-                        <Col>
-                            <img src={amazotwentyfour} alt='one' style={{width: '100vw'}}/>
-                        </Col>
-                    </Row>
-                </Container>
-                <Container>
-                    <Row>
-                        <Col>
-                            <img src={amazotwentyfive} alt='one' style={{width: '100vw'}}/>
-                        </Col>
-                    </Row>
-                </Container>
-                <Container>
-                    <Row>
-                        <Col>
-                            <img src={amazotwentysix} alt='one' style={{width: '100vw'}}/>
-                        </Col>
-                    </Row>
-                </Container>
-                <Container>
-                    <Row>
-                        <Col>
-                            <img src={amazotwentyseven} alt='one' style={{width: '100vw'}}/>
-                        </Col>
-                    </Row>
-                </Container>
-                <Container>
-                    <Row>
-                        <Col>
-                            <img src={amazotwentyeight} alt='one' style={{width: '100vw'}}/>
-                        </Col>
-                    </Row>
-                </Container>
-                <Container>
-                    <Row>
-                        <Col>
-                            <img src={amazotwentynine} alt='one' style={{width: '100vw'}}/>
-                        </Col>
-                    </Row>
-                </Container>
-                <Container>
-                    <Row>
-                        <Col>
-                            <img src={amazothirty} alt='one' style={{width: '100vw'}}/>
-                        </Col>
-                    </Row>
-                </Container>
+                
+                            <img src={amazoOne} alt='one' style={{width: '98.5vw'}}/>
+                
+                
+                
+                
+                            <img src={amazotwo} alt='one' style={{width: '98.5vw'}}/>
+                
+                
+                
+                
+                            <img src={amazothree} alt='one' style={{width: '98.5vw'}}/>
+                
+                
+                
+                
+                            <img src={amazofour} alt='one' style={{width: '98.5vw'}}/>
+                
+                
+                
+                
+                            <img src={amazofive} alt='one' style={{width: '98.5vw'}}/>
+                
+                
+                
+                
+                            <img src={amazosix} alt='one' style={{width: '98.5vw'}}/>
+                
+                
+                
+                
+                            <img src={amazoseven} alt='one' style={{width: '98.5vw'}}/>
+                
+                
+                
+                
+                            <img src={amazoeight} alt='one' style={{width: '98.5vw'}}/>
+                
+                
+                
+                
+                            <img src={amazonine} alt='one' style={{width: '98.5vw'}}/>
+                
+                
+                
+                
+                            <img src={amazoten} alt='one' style={{width: '98.5vw'}}/>
+                
+                
+                
+                
+                            <img src={amazoeleven} alt='one' style={{width: '98.5vw'}}/>
+                
+                
+                
+                
+                            <img src={amazotwelve} alt='one' style={{width: '98.5vw'}}/>
+                
+                
+                
+                
+                            <img src={amazothirteen} alt='one' style={{width: '98.5vw'}}/>
+                
+                
+                
+                
+                            <img src={amazofourteen} alt='one' style={{width: '98.5vw'}}/>
+                
+                
+                
+                
+                            <img src={amazofifteen} alt='one' style={{width: '98.5vw'}}/>
+                
+                
+                
+                
+                            <img src={amazosixteen} alt='one' style={{width: '98.5vw'}}/>
+                
+                
+                
+                
+                            <img src={amazoseventeen} alt='one' style={{width: '98.5vw'}}/>
+                
+                
+                
+                
+                            <img src={amazoeighteen} alt='one' style={{width: '98.5vw'}}/>
+                
+                
+                
+                
+                            <img src={amazonineteen} alt='one' style={{width: '98.5vw'}}/>
+                
+                
+                
+                
+                            <img src={amazotwenty} alt='one' style={{width: '98.5vw'}}/>
+                
+                
+                
+                
+                            <img src={amazotwentyOne} alt='one' style={{width: '98.5vw'}}/>
+                
+                
+                
+                
+                            <img src={amazotwentytwo} alt='one' style={{width: '98.5vw'}}/>
+                
+                
+                
+                
+                            <img src={amazotwentythree} alt='one' style={{width: '98.5vw'}}/>
+                
+                
+                
+                
+                            <img src={amazotwentyfour} alt='one' style={{width: '98.5vw'}}/>
+                
+                
+                
+                
+                            <img src={amazotwentyfive} alt='one' style={{width: '98.5vw'}}/>
+                
+                
+                
+                
+                            <img src={amazotwentysix} alt='one' style={{width: '98.5vw'}}/>
+                
+                
+                
+                
+                            <img src={amazotwentyseven} alt='one' style={{width: '98.5vw'}}/>
+                
+                
+                
+                
+                            <img src={amazotwentyeight} alt='one' style={{width: '98.5vw'}}/>
+                
+                
+                
+                
+                            <img src={amazotwentynine} alt='one' style={{width: '98.5vw'}}/>
+                
+                
+                
+                
+                            <img src={amazothirty} alt='one' style={{width: '98.5vw'}}/>
+                
+                
+                
             </div>
         )
     }

@@ -8,7 +8,6 @@ export class Roadmap extends Component {
             <>
                 <BrowserView>
                     <div style={{height: '100vh'}}>
-                        <img src={bgTwo} id='bgSectionTwo' />
                         {/* <div id='tokenSaleDes'>
                             <h1>What is a Token Sale?</h1>
                             <p>A token sale, sometimes referred to as an ICO, is form of crowd funding for digital currency-related projects. In token sales, purch - asers buy units of a new currency in exchange for legal tender or other digital currencies, such as Bitcoin or Ethereum.</p>

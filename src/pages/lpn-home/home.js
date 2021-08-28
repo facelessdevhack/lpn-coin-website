@@ -42,9 +42,10 @@ class Home extends React.Component {
                         </Navbar.Brand>
                         <Navbar.Toggle aria-controls="basic-navbar-nav" />
                         <Navbar.Collapse id="basic-navbar-nav">
-                        <Nav className="me-auto">
-                            <Nav.Link href="/">Home</Nav.Link>
-                            <Nav.Link href="/login">Login</Nav.Link>
+                        <Nav className="me-auto" style={{position: 'absolute', right: '15vw'}}>
+                            <Nav.Link href="/" style={{color: 'white', padding: '20px', borderBottomLeftRadius: '10px', borderBottomRightRadius: '10px', }}>Home</Nav.Link>
+                            <Nav.Link href="/whitepaper" style={{color: 'white',  padding: '20px', borderBottomLeftRadius: '10px', borderBottomRightRadius: '10px', }}>Whitepaper</Nav.Link>
+                            <Nav.Link href="/login" style={{color: 'white',  padding: '20px 40px', borderRadius: '40px', border: '1px solid #77d102', }}>Login</Nav.Link>
                         </Nav>
                         </Navbar.Collapse>
                     </Container>
@@ -53,7 +54,7 @@ class Home extends React.Component {
                     <div id='jumboTronWrapper'>
                         <div id='leftJumbo'>
                             <h1>Amazo ICO is Launching on <br/>02-09-2021</h1>
-                            <p>A Global Leader In The Domain Of Real Estate, Transportation And Forex Trading.</p>
+                            <p style={{color: 'white'}}>A Global Leader In The Domain Of Real Estate, Transportation And Forex Trading.</p>
                             <div>
                                 <Button variant="contained" id='buyBtn' href='#InitialOffering'>
                                     ICO OFFERING
@@ -77,12 +78,27 @@ class Home extends React.Component {
                 <div>
                     <ChartSection />
                 </div>
-                <div id='InitialOffering'>
-                    <Roadmap />
-                </div>
-                <div>
-                    <SubForm />
-                </div>
+                <Container style={{height: 'fit-content', maxWidth: '100vw', backgroundImage: `url(${bgTwo})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', paddingBottom: '50px'}}>
+                    <Row>
+                        <Col>
+                            <Roadmap />
+                        </Col>
+                    </Row>
+                </Container>
+                <Container style={{height: 'fit-content', maxWidth: '100vw', backgroundImage: `url(${bgTwo})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', paddingTop: '50px', paddingBottom: '50px'}}>
+                        <Row>
+                            <Col>
+                                <SubForm />
+                            </Col>
+                        </Row>
+                    </Container>
+                <Container style={{backgroundImage: `url(${bgTwo})`, textAlign: 'center', maxWidth: '100vw', padding: '2vw', borderTop: '1px solid white'}}>
+                        <Row>
+                            <Col>
+                                <Footer />
+                            </Col>
+                        </Row>
+                    </Container>
                 </BrowserView>
                 <TabletView style={{scrollbarWidth: 0}}>
                 <Navbar id='navbar' bg="dark" variant="dark" expand="sm">
@@ -177,13 +193,6 @@ class Home extends React.Component {
                                 <Nav.Link href="/" style={{color: 'black', fontFamily: 'Poppins', fontSize: '3vw', backgroundColor: 'rgba(255,255,255,0.8)',borderRadius: '10px',marginBottom: '5px', padding: '10px'}}>Home</Nav.Link>
                                 <Nav.Link href="/whitepaper" style={{color: 'black', fontFamily: 'Poppins', fontSize: '3vw', backgroundColor: 'rgba(255,255,255,0.8)',borderRadius: '10px',marginBottom: '5px', padding: '10px'}}>Whitepaper</Nav.Link>
                                 <Nav.Link href="/login" style={{color: 'black', fontFamily: 'Poppins', fontSize: '3vw', backgroundColor: 'rgba(255,255,255,0.8)',borderRadius: '10px',marginBottom: '5px', padding: '10px'}}>Login</Nav.Link>
-                                {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-                                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                                <NavDropdown.Divider />
-                                <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-                                </NavDropdown> */}
                             </Nav>
                             </Navbar.Collapse>
                         </Container>
