@@ -4,13 +4,15 @@ import {
     LOGIN_FAILED,
     LOGIN_TRY,
     LOGOUT,
-    USER_LOADED
+    USER_LOADED,
+    FAQS_LOADED
  } from "../lpn-actions/types";
 
  const initialState = {
      jwt: '',
      isAuthenticated: !!(localStorage.getItem('loginData')),
-     userData: []
+     userData: [],
+     faqs: []
  }
 
 export default function( state = initialState, action ) {
@@ -33,6 +35,11 @@ export default function( state = initialState, action ) {
             return {
                 ...state, 
                 userData: action.payload
+            }
+        case FAQS_LOADED:
+            return {
+                ...state,
+                faqs: action.payload
             }
         case LOGIN_FAILED:
         case LOGOUT:

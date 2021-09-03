@@ -3,9 +3,10 @@
 #background {
   z-index: 0;
   width: 100vw;
+  height: 100vh;
 }
 #navWrapper {
-    background: rgba(0,0,0,0.3);
+    background: rgba(0,0,0,1);
     position: fixed;
     top: 0;
     width: 100%
@@ -517,7 +518,7 @@
     height: unset;
   }
   #background {
-    height: 50vh;
+    /* height: 50vh; */
     margin-top: -4px;
     position: absolute;
   }
@@ -549,12 +550,7 @@
   #tokenSaleDes p {
     font-size: 2.5vw;
   }
-  #tokenSaleDes h1 {
-    font-size: 4vw;
-  }
-  #tokenHeading {
-    font-size: 4vw;
-  }
+  
   #chartdiv {
     width: 100% !important;
     height: 50% !important;

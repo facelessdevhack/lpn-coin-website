@@ -70,3 +70,110 @@
     width: 80vw;
     margin-top: 5vh
 }
+
+#dashboardLeft {
+    background-color: beige;
+    /* height: fit-content; */
+    height: 100%;
+    width: 20%;
+    border-radius: 10px;
+    padding: 2%;
+    text-align: center;
+    font-size: 120%;
+}
+#leftInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.rightBtns button {
+    background: transparent;
+    border: unset;
+    margin: 10px;
+}
+#leftInfo span {
+    color: gray;
+    margin-bottom: 5px;
+}
+#leftInfo img {
+    border-radius: 50%;
+    width: 50%;
+    margin: 30px auto;
+}
+#dashboardRight {
+    /* background-color: blue; */
+    /* height: fit-content; */
+    height: 100%;
+    width: 80%;
+    border-radius: 10px;
+}
+#rightTopBar {
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+}
+#tokenAmount {
+    width: 40%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: antiquewhite;
+    margin: 20px;
+    padding: 2%
+}
+.amountInner p {
+    font-size: 3vw;
+}
+.amountInner span {
+    font-size: 1vw;
+    color: grey;
+}
+#rightRefferalBar {
+    width: 100%;
+    height: fit-content;
+    border-radius: 10px;
+    background-color: antiquewhite;
+    margin: 11px;
+    padding: 2%;
+}
+#referralLine {
+    width: 90%;
+    text-align: center;
+    margin: 10px;
+}
+@media screen and (max-width: 1028px) {
+    #dashboardWrapper {
+        flex-direction: column;
+    }
+    #dashboardLeft {
+        display: flex;
+        width: 100%;
+
+    }
+    #rightRefferalBar {
+        width: 90%;
+    }
+    #referralLine {
+    }
+    #dashboardRight {
+        height: 100%;
+        width: 100%;
+        border-radius: 10px;
+    }
+    #rightTopBar {
+        flex-direction: column;
+        width: 100%;
+    }
+    #tokenAmount {
+        width: 90%;
+        text-align: center;
+        margin: 10px;
+    }
+    .amountInner p {
+        font-size: 10vw;
+    }
+    .amountInner span {
+        font-size: 6vw;
+        color: grey;
+    }
+}

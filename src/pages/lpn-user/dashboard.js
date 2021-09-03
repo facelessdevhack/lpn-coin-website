@@ -16,10 +16,16 @@ import {
     CardMedia,
     CardContent
 } from '@material-ui/core';
+import profile from '../../assets/pp.png';
 import {
     AccountBalanceWallet,
     MonetizationOnRounded
 } from '@material-ui/icons';
+import {
+    BrowserView,
+    MobileOnlyView
+} from 'react-device-detect';
+
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -78,44 +84,70 @@ class UserDashboard extends Component {
         this.props.logout();
         this.props.history.push('/')
     }
+    referralCopy = () => {
+        navigator.clipboard.writeText('Copy this text to clipboard');
+        alert("Copied")
+    }
     render() {
         return (
-            // <div id="userWrapper">
-            //         <div id='userInfo'>
-            //             <h1>Name: {this.state.user.name}</h1>
-            //             <h4>Member ID: AMAZO-00000000{this.state.user.id}</h4>
-            //             <h4>Father's Name: {this.state.user.fatherName}</h4>
-            //             <h4>Email Address: {this.state.user.email}</h4>
-            //             <h4>Phone Number: {this.state.user.phone}</h4>
-            //             <h4>City: {this.state.user.city}</h4>
-            //             <h4>Country: {this.state.user.country}</h4>
-            //             <h4>Aadhar Number: {this.state.user.aadhar}</h4>
-            //             <h4>Allotment Date: {this.state.user.allotmentDate}</h4>
-            //             <h4>Token Amount: {this.state.user.tokenAmount}</h4>
-            //         </div>
-            //         <div>
-                        
-            //         </div>
-            // </div>
-            // <div id='dashboardWrapper'>
-            //     <div id='dashboardContainer'>
-            //         <div id='dashboardMenu'>
-            //             <div>
-            //                 <ul>
-            //                     <li>Dashboard</li>
-            //                     <li>Buy Token</li>
-            //                     <li>Purchase Summary</li>
-            //                     <li>Settings</li>
-            //                     <li>Logout</li>
-            //                 </ul>
-            //             </div>
-            //             <div>
-
-            //             </div>
-            //         </div>
-            //         <p>This is the Dashboard</p>
-            //     </div>
-            // </div>
+            <>
+            <BrowserView>
+                <div id="dashboardWrapper">
+                    <div id='dashboardLeft'>
+                        <div id='leftInfo'>
+                            <img src={profile} />
+                            <span>Welcome Back,</span>
+                            <h4>{this.state.user.name}</h4>
+                        </div>
+                        <div>
+                            <div className="rightBtns">
+                                <button>Dashboard</button>
+                            </div>
+                            <div className="rightBtns">
+                                <button>Buy Tokens</button>
+                            </div>
+                            <div className="rightBtns">
+                                <button>Refferals</button>
+                            </div>
+                            <div className="rightBtns">
+                                <button>Profile</button>
+                            </div>
+                            <div className="rightBtns">
+                                <button onClick={this.logout}>Logout</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div id='dashboardRight'>
+                        <div id='rightTopBar'>
+                            <div id='tokenAmount'>
+                                <div className='amountInner'>
+                                    <p>{this.state.user.tokenAmount}</p>
+                                    <span>Tokens</span>
+                                </div>
+                            </div>
+                            <div id='tokenAmount'>
+                                <div className='amountInner'>
+                                    <p>200</p>
+                                    <span>Bonus Tokens</span>
+                                </div>
+                            </div>
+                            <div id='tokenAmount'>
+                                <div className='amountInner'>
+                                    <p>{parseInt(this.state.user.tokenAmount) + parseInt(this.state.user.bonus)}</p>
+                                    <span>Total Tokens</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div id='rightRefferalBar'>
+                                <div id='referralLine'>
+                                    <p>Referral code</p>
+                                    <button onClick={this.referralCopy}>{this.state.user.referral}</button>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </BrowserView>
+            <MobileOnlyView>
             <div id='dashboardWrapper' >
                 <Tabs
                     orientation="vertical"
@@ -180,6 +212,26 @@ class UserDashboard extends Component {
                                         title="Paella dish"
                                     />
                                 </Card>
+                                {/* <Card className='DashboardWrapperTwo'>
+                                    <CardHeader
+                                        avatar={
+                                        <Avatar aria-label="recipe" className='DashboardAvatar'>
+                                            <MonetizationOnRounded />
+                                        </Avatar>
+                                        }
+                                        action={
+                                        <IconButton aria-label="settings">
+                                        </IconButton>
+                                        }
+                                        title="Token Amount"
+                                        subheader="100"
+                                    />
+                                    <CardMedia
+                                        className='DashboardMedia'
+                                        image="/static/images/cards/paella.jpg"
+                                        title="Paella dish"
+                                    />
+                                </Card> */}
                             </div>
                         </div>
                     </div>
@@ -205,6 +257,8 @@ class UserDashboard extends Component {
                         </Button>
                 </TabPanel>
                 </div>
+            </MobileOnlyView>
+            </>
         )
     }
 }

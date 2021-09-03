@@ -3,7 +3,8 @@ import {
     LOGIN_FAILED,
     LOGIN_TRY,
     LOGOUT,
-    USER_LOADED
+    USER_LOADED,
+    FAQS_LOADED
 } from './types';
 
 import axios from 'axios';
@@ -18,7 +19,7 @@ export const login = (identifier, password) => (dispatch) => {
     };
     const setLoginLocal = async (loginData) => {
         try {
-          await localStorage.setItem('loginData', JSON.stringify(loginData));
+          await localStorage.setItem('loginData',loginData);
         } catch (err) {
           console.log(err);
         }
@@ -58,16 +59,6 @@ export const loadUser = () => (dispatch, getState) => {
             "Authorization": `Bearer ${key}`
         }
     };
-    // const setLoginLocal = async (userData) => {
-    //     try {
-    //       await localStorage.setItem('userData', JSON.stringify(userData));
-    //     } catch (err) {
-    //       console.log(err);
-    //     }
-    //   };
-    // Request Body 
-    // const body = JSON.stringify({ identifier, password });
-    // If token, add to headers config
     if (key) {
         config.headers["Authorization"] = `Bearer ${key}`
     };
@@ -75,7 +66,6 @@ export const loadUser = () => (dispatch, getState) => {
     axios
         .get("http://143.198.167.18:1337/users/me", config)
         .then(res => {
-            // setLoginLocal(res.data); // storing in local storage for next launch
             dispatch({
                 type: USER_LOADED,
                 payload: res.data
@@ -83,8 +73,34 @@ export const loadUser = () => (dispatch, getState) => {
             console.log(res.data)
         })
         .catch(err => {
+            console.log(err)
+        })
+}
+export const loadFaq = () => (dispatch, getState) => {
+    // dispatch({type: LOGIN_TRY})
+    // Headers 
+    const key = localStorage.getItem('loginData')
+    console.log(key)
+    const config = {
+        headers: {
+            "Content-Type": "application/json",
+            // "Authorization": `Bearer ${key}`
+        }
+    };
+    // if (key) {
+    //     config.headers["Authorization"] = `Bearer ${key}`
+    // };
+    console.log("http://143.198.167.18:1337/fars", config)
+    axios
+        .get("http://143.198.167.18:1337/fars", config)
+        .then(res => {
             dispatch({
-                type: LOGIN_FAILED,
-            })
+                type: FAQS_LOADED,
+                payload: res.data
+            });
+            console.log(res.data)
+        })
+        .catch(err => {
+            console.log(err)
         })
 }

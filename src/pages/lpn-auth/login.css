@@ -1,103 +1,38 @@
 #login-wrapper {
-    background-color: aliceblue;
-    width: 100vw;
+    background-color: #013162;
     height: 100vh;
-    position: absolute;
-    top: 0
+    padding-top: 100px;
 }
 #overlay {
     width: 30vw;
     margin: 0 auto;
-    position: relative;
-    top: 10vh;
-    text-align: center;
-    background: lightblue;
-    padding: 60px 20px 60px 20px;
-    box-shadow: 8px 9px 5px 0px rgba(0,0,0,0.75);
-    -webkit-box-shadow: 8px 9px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 8px 9px 5px 0px rgba(0,0,0,0.75);
+    background-color: white;
+    padding: 2%;
+    border-radius: 10px;
+}
+#logo-wrapper {
+    display: flex;
 }
 #logo-wrapper img{
-    width: 20%
+    width: 20%;
+    margin: 0 auto;
 }
 #login-welcometext p {
-    font-weight: 300;
-    font-size: 2em;
-}
-#login-input p {
-    font-size: 1em;
-    font-weight: 300;
-    text-align: left;
-    margin-left: 20px;
+    font-size: 2vw;
+    text-align: center;
+    margin-top: 10px;
 }
 #login-input input {
-    width: 80%;
-    padding: 1em;
-    border-radius: 13px;
-    border: 1px solid aliceblue;
+    width: 100%;
+    border: unset;
+    margin-bottom: 20px;
 }
-#login-btn-wrapper button {
-    width: 40%;
-    margin-top: 20px;
-    height: 20%;
+#login-input input:focus {
+    outline: unset
 }
 @media screen and (max-width: 1028px) {
-    #login-input {
-        padding: 50px;
-        box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-        -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-        -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-        border-radius: 30px;
-        background-color: whitesmoke;
-    }
-    #login-welcometext {
-        background: greenyellow;
-        padding: 20px;
-        width: 80%;
-        margin: 0 auto;
-        border-radius: 10px;
-        position: relative;
-        top: 30px;
-        font-weight: 900;
-        font-family: Poppins;
-    }
-    #login-welcometext-mb {
-        background: greenyellow;
-        padding: 10px;
-        width: 80%;
-        margin: 0 auto;
-        border-radius: 10px;
-        position: relative;
-        top: 10px;
-        font-weight: 900;
-        font-family: Poppins;
-    }
-    #login-welcometext-mb p {
-        font-weight: 300;
-        font-size: 1.3em;
-    }
-    #login-btn-wrapper button {
-        padding: 20px
-    }
-    #login-input-mb {
-        padding: 20px;
-        box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-        -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-        -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-        border-radius: 20px;
-        background-color: whitesmoke;
-    }
-    #login-input-mb p {
-        font-size: 1em;
-        font-weight: 300;
-        text-align: left;
-        margin-left: 20px;
-    }
-    #login-input-mb input {
-        width: 90%;
-        padding: 1em;
-        border-radius: 13px;
-        border: 1px solid aliceblue;
-        font-size: 14px;
+    #overlay {
+        width: 90vw;
+        padding: 10vw
     }
 }
